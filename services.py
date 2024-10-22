@@ -1,5 +1,6 @@
 import requests
 import sett
+import json
 
 def obtener_mensaje_whatsapp(message):
     if 'type' not in message:
@@ -27,3 +28,25 @@ def enviar_mensaje_whatsapp(data):
         
     except Exception as e:
         return e, 403
+
+def text_message(number, text):
+    data = json.dumps(
+        {
+            "messaging_product": "whatsapp",    
+            "recipient_type": "individual",
+            "to": "{{Recipient-Phone-Number}}",
+            "type": "text",
+            "text": {
+                "body": text
+            }
+        }
+    )
+    return data
+
+def administrar_chatbot(text, number, messageId, name):
+    text = text.lower() #Mensaje que envio al usuario
+    list = []
+    
+    data = text_message(number, 'Hola Mundito')
+    enviar_mensaje_whatsapp(data)
+    
