@@ -1,0 +1,5 @@
+token = 'implantvel'
+
+whatsapp_token = 'EAANI7JYzbL8BOyJnDnT5KyVOlwxZB3SU6Wfv1cmZBlcGq5eBVj9TuQpGhyzExTcs5taFMM7QAASnZC9AS4KPu2kHdrFZASNjMBKVIN89wZC0gwHqEZACqF0K0mIoX36p8u60ZCZAWbawn1dYi5jZCieXplwnaVtrIGzpSpqeeOXqZCcHEGcC7aZAMU01qG3iEyYJyup'
+
+whatsapp_url = 'https://graph.facebook.com/v20.0/397502360122441/messages'
